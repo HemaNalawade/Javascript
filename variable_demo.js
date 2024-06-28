@@ -15,3 +15,6 @@ console.log("name:"+name + " " +"Gender:"+gender)
 var x=60, y=45, z
 z=x+y
 console.log("addition is",z)
+var x=30, y=8, z
+z=x/y
+console.log("divided by:",z)
