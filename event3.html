@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="urf-8">
+        <meta name="author" content="Hem">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Event Demo</title>
+    </head>
+    <body>
+        <p>the earth in moving around the Sun</p>
+        <p class="para">the earth in moving</p>
+        <h3 class="para">the earth in natural a around the Sun the planet</h3>
+        <h2 id="myid"></h2>
+        <h2 id="hid"></h2>
+        <script>
+            let elementArr=document.getElementsByClassName("para");
+            document.getElementById("myid").innerHTML="this issecond last second element pata"+ elementArr[1].innerHTML
+
+        </script>
+         <script>
+            let queryArr=document.querySelectorAll("p.para")
+            document.getElementById("hid").innerHTML="this issecond last second element pata"+ queryArr[0].innerHTML
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="urf-8">
+        <meta name="author" content="Hem">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Event Demo</title>
+        <script>
+            function greeting(){
+               let elementObj = document.getElementById("myid")
+               elementObj.innerHTML = "thank you!"
+               elementObj.style.backgroundColor='#FF00FF'
+               elementObj.style.color ='white'
+               elementObj.style.fontStyle='italic'
+            }
+            function doMagic(){
+                let eleDivRef = document.getElementById("d1")
+                eleDivRef.style.backgroundColor='green'
+                eleDivRef.style.borderRadius='20px'
+                   eleDivRef.style.padding='15px'
+                eleDivRef.style.textAlign='center'
+                
+                eleDivRef.innerHTML='<img src="C:\Users\Lenovo\OneDrive\Desktop\html\event_handling_dom\photoo.jpg" width="100px" height="150">'
+            }
+        </script>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: plum;
+                color: whitesmoke;
+                padding: 50px;
+                box-sizing: border-box;
+                font-style: italic;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="myid">Hello Welcome</h1>
+        <button onclick="greeting()">Greet</button>
+        <div  id="d1" onclick="doMagic()">
+            Click to magic 
+        </div>
+    <p id="p1">Earth is moving around the sun</p>
+    <p id="p2"></p>
+    <script>
+        let p2Element =document.getElementById("p2");
+        p2Element.innerHTML="This is text from p1 para" + document.getElementById("p1").innerHTML
+    </script>
+    </body>
+</html>

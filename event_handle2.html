@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="urf-8">
+        <meta name="author" content="Hem">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Event Demo</title>
+        <script>
+            function show(){
+                let ulElement =document.getElementById("lst")
+                ulElement.hidden=false  //changing the value of hidden attribute
+            }
+        </script>
+    </head>
+    <body>
+        <p>the earth is moving</p>
+        <p>the earth is moving planet which has life</p>
+        <p>the earth is moving only obe natural sattelite -Moon</p>
+        <h2 id="myid"></h2>
+        <script>
+            let pElementArr=document.getElementsByTagName("p")
+                document.getElementById("myid").innerHTML="this text is from 3re para"+
+                pElementArr[2].innerHTML
+            
+        </script>
+        <button onclick="show()">Show List</button>
+        <ul id="lst" hidden="true">
+            <script>
+                for(let pEle of pElementArr)
+                document.write(`<li>${pEle.innerHTML}</li>`)
+            </script>
+        </ul>
+    </body>
+</html>
